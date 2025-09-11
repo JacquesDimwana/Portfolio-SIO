@@ -14,34 +14,30 @@ Il permet ainsi de définir l'entête et le pied de page de toutes les pages du 
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}Portfolio BTS SIO{% endblock %}</title>
-    
-    <!-- Favicons :-->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ SITEURL }}/theme/logo/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ SITEURL }}/theme/logo/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="{{ SITEURL }}/theme/logo/favicon-48x48.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ SITEURL }}/theme/logo/favicon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ SITEURL }}/theme/logo/favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="{{ SITEURL }}/theme/logo/favicon-512x512.png">
-    <link rel="shortcut icon" href="{{ SITEURL }}/theme/logo/favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stage SIO1 - Portfolio BTS SIO SLAM</title>
 
-    <!-- IMPORTS DES BIBLIOTHEQUES (CSS, FONTS, ICONS) : -->
-    
-    <!-- Bootstrap CSS : --> 
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/vendor/bootstrap/css/bootstrap.min.css">
-    
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/vendor/bootstrap-icons/bootstrap-icons.css">
+  <!-- Favicon : icônes du site affichées dans l'onglet du navigateur -->
+  <link rel="icon" type="image/png" sizes="16x16" href="../theme/logo/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../theme/logo/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="../theme/logo/favicon-48x48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../theme/logo/favicon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../theme/logo/favicon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="../theme/logo/favicon-512x512.png" />
+  <link rel="shortcut icon" href="../theme/logo/favicon.ico" />
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/vendor/fontawesome/css/all.min.css">
+  <!-- CSS Bootstrap pour la mise en page responsive -->
+  <link rel="stylesheet" href="../theme/vendor/bootstrap/css/bootstrap.min.css" />
 
-    
-    <!-- STYLES CSS PERSONNEL : -->   
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/custom.css">
+  <!-- Icônes Bootstrap -->
+  <link rel="stylesheet" href="../theme/vendor/bootstrap-icons/bootstrap-icons.css" />
 
+  <!-- Font Awesome pour des icônes supplémentaires -->
+  <link rel="stylesheet" href="../theme/vendor/fontawesome/css/all.min.css" />
+
+  <!-- CSS personnalisé pour les styles spécifiques du site -->
+  <link rel="stylesheet" href="../theme/css/custom.css" />
 </head>
 
 <body class="m-0 p-0">
@@ -60,3 +56,23 @@ Il permet ainsi de définir l'entête et le pied de page de toutes les pages du 
     <script src="{{ SITEURL }}/theme/js/custom.js"></script>
 </body>
 </html>
+
+<!-- Lien GitHub centré en bas -->
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card shadow-sm border-primary text-center">
+                <div class="card-body">
+                    <i class="bi bi-github display-4 mb-3 text-dark"></i>
+                    <h5 class="card-title">Mon GitHub</h5>
+                    <p class="card-text">
+                        Retrouvez tous mes projets, TP et réalisations sur mon compte GitHub.
+                    </p>
+                    <a href="https://github.com/JacquesDimwana/Portfolio-SIO" target="_blank" class="btn btn-outline-dark">
+                        Accéder à GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

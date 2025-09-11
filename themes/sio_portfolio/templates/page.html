@@ -8,3 +8,210 @@
   {{ page.content }}
     
 {% endblock %}
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stage SIO1 - Portfolio BTS SIO SLAM</title>
+
+  <!-- Favicon : les petites icônes qui apparaissent dans l'onglet du navigateur -->
+  <link rel="icon" type="image/png" sizes="16x16" href="../theme/logo/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../theme/logo/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="../theme/logo/favicon-48x48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../theme/logo/favicon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../theme/logo/favicon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="../theme/logo/favicon-512x512.png" />
+  <link rel="shortcut icon" href="../theme/logo/favicon.ico" />
+
+  <!-- Bootstrap CSS : permet de créer une mise en page responsive facilement -->
+  <link rel="stylesheet" href="../theme/vendor/bootstrap/css/bootstrap.min.css" />
+
+  <!-- Bootstrap Icons : pour utiliser des petites icônes modernes -->
+  <link rel="stylesheet" href="../theme/vendor/bootstrap-icons/bootstrap-icons.css" />
+
+  <!-- Font Awesome : pour ajouter encore plus d’icônes -->
+  <link rel="stylesheet" href="../theme/vendor/fontawesome/css/all.min.css" />
+
+  <!-- CSS personnalisé : pour les styles spécifiques à ton site -->
+  <link rel="stylesheet" href="../theme/css/custom.css" />
+</head>
+
+<body class="m-0 p-0 bg-light">
+  <!-- HEADER : partie en haut du site avec le logo et le titre -->
+  <header class="container-fluid py-3 bg-dark text-light shadow-sm">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Logo de l’entreprise ou du portfolio -->
+        <div class="col-md-3 text-center text-md-start">
+          <a href="../" title="Page d'accueil" class="navbar-brand">
+            <img src="../theme/logo/logo_PBS-teal.png" alt="logo du portfolio" style="height: 70px;" />
+          </a>
+        </div>
+
+        <!-- Titre et sous-titre du portfolio -->
+        <div class="col-md-9 text-center text-md-start">
+          <h1 class="h3 m-0 fw-bold">Portfolio BTS SIO SLAM</h1>
+          <p class="m-0 text-secondary"><i>Mon parcours de formation</i></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVBAR : menu de navigation principal -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary shadow sticky-top">
+    <div class="container">
+      <!-- Affiché seulement sur mobile -->
+      <a class="navbar-brand d-md-none fw-bold" href="../">Portfolio</a>
+
+      <!-- Bouton pour ouvrir/fermer le menu sur mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Liens du menu principal -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-semibold">
+          <!-- Accueil -->
+          <li class="nav-item">
+            <a class="nav-link" href="../"><i class="bi bi-house me-1"></i> Accueil</a>
+          </li>
+
+          <!-- Menu déroulant "Mon parcours" -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../pages/parcours" data-bs-toggle="dropdown"> 
+              <i class="bi bi-mortarboard me-1"></i> Mon parcours
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../pages/parcours-scolaire">Parcours scolaire</a></li>
+              <li><a class="dropdown-item" href="../pages/bts-sio">Le BTS SIO</a></li>
+            </ul>
+          </li>
+
+          <!-- Menu déroulant "Réalisations" -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../pages/realisations" data-bs-toggle="dropdown">
+              <i class="bi bi-check2-square me-1"></i> Réalisations
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../pages/tp-majeurs">TP majeurs</a></li>
+              <li><a class="dropdown-item" href="../pages/stage-sio1">Stage de 1ère année</a></li>
+              <li><a class="dropdown-item" href="../pages/stage-sio2">Stage de 2e année</a></li>
+              <li><a class="dropdown-item" href="../pages/projets-scolaires">Projets scolaires</a></li>
+              <li><a class="dropdown-item" href="../pages/projets-personnels">Projets personnels</a></li>
+              <li><a class="dropdown-item" href="../pages/certifications-complementaires">Certifications complémentaires</a></li>
+            </ul>
+          </li>
+
+          <!-- Menu déroulant "Veille techno" -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../ma-veille" data-bs-toggle="dropdown">
+              <i class="bi bi-broadcast-pin me-1"></i> Veille techno.
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../ma-veille">Ma veille technologique</a></li>
+              <li><a class="dropdown-item" href="../archives">Archive des articles</a></li>
+              <li><a class="dropdown-item" href="../categories">Liste des catégories</a></li>
+              <li><a class="dropdown-item" href="../authors">Liste des auteurs</a></li>
+              <li><a class="dropdown-item" href="../tags">Liste des mots clés</a></li>
+            </ul>
+          </li>
+
+          <!-- Engagement étudiant -->
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/engagement-etudiant">
+              <i class="bi bi-people-fill me-1"></i> Engagement
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="container my-5">
+    <!-- Carte : Fiche descriptive du stage -->
+    <div class="card shadow-sm border-0 mb-4">
+      <div class="card-body">
+        <h2 class="h4 fw-bold text-primary">Fiche descriptive</h2>
+        <p><strong>Dates du stage :</strong></p>
+        <ul>
+          <li><strong>Début :</strong> 19/05/2025</li>
+          <li><strong>Fin :</strong> 03/07/2025</li>
+        </ul>
+        <p><strong>Entreprise :</strong> Palco</p>
+      </div>
+    </div>
+
+    <!-- Carte : Présentation de l'entreprise -->
+    <div class="card shadow-sm border-0 mb-4">
+      <div class="card-body">
+        <h2 class="h4 fw-bold text-primary">Présentation de l'entreprise</h2>
+        <p>
+          Palco est une entreprise spécialisée dans le transport située dans le département 91.
+          Elle propose des services pour transporter des marchandises et gérer la logistique.
+          Les systèmes informatiques aident à mieux gérer les flux et la maintenance.
+        </p>
+      </div>
+    </div>
+
+    <!-- Carte : Missions et outils utilisés -->
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h2 class="h4 fw-bold text-primary">Missions &amp; tâches réalisées</h2>
+        <ul>
+          <!-- Liste claire des missions effectuées pendant le stage -->
+          <li>Collecte et centralisation des données de transport</li>
+          <li>Mise en place d’une interface de suivi en temps réel</li>
+          <li>Contrôle qualité des données saisies</li>
+          <li>Détection et correction de bugs sur applications internes</li>
+          <li>Suivi et résolution des incidents techniques</li>
+          <li>Mise à jour des logiciels et déploiement de correctifs</li>
+          <li>Assistance aux utilisateurs</li>
+          <li>Rédaction de documentation technique</li>
+        </ul>
+
+        <h3 class="h5 mt-4">Outils utilisés</h3>
+        <ul class="list-unstyled">
+          <!-- Liste des logiciels et explication avec tooltip (info au survol) -->
+          <li>TransData Manager <i class="bi bi-info-circle ms-2 text-primary" data-bs-toggle="tooltip"
+              title="Logiciel pour centraliser et gérer les données de transport."></i></li>
+          <li>Visual Studio Code <i class="bi bi-info-circle ms-2 text-primary" data-bs-toggle="tooltip"
+              title="Éditeur de code pour programmer facilement."></i></li>
+          <li>LogiTrack <i class="bi bi-info-circle ms-2 text-primary" data-bs-toggle="tooltip"
+              title="Application pour suivre les transports en temps réel."></i></li>
+          <li>TransportDB <i class="bi bi-info-circle ms-2 text-primary" data-bs-toggle="tooltip"
+              title="Base de données SQL pour stocker les informations de transport."></i></li>
+          <li>FleetControl <i class="bi bi-info-circle ms-2 text-primary" data-bs-toggle="tooltip"
+              title="Gestion et suivi des véhicules de la flotte."></i></li>
+          <li>HelpDeskPro <i class="bi bi-info-circle ms-2 text-primary" data-bs-toggle="tooltip"
+              title="Logiciel pour gérer les tickets d’assistance technique."></i></li>
+          <li>PatchManager <i class="bi bi-info-circle ms-2 text-primary" data-bs-toggle="tooltip"
+              title="Pour mettre à jour et déployer les correctifs logiciels."></i></li>
+          <li>DocuSys <i class="bi bi-info-circle ms-2 text-primary" data-bs-toggle="tooltip"
+              title="Système pour gérer et archiver les documents."></i></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER : pied de page -->
+  <footer class="text-center py-3 bg-dark text-light mt-5">
+    <small>&copy; 2025 - Portfolio BTS SIO SLAM - Jacques Dimwana</small>
+  </footer>
+
+  <!-- SCRIPTS JS -->
+  <script src="../theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../theme/js/custom.js"></script>
+  <script>
+    // Permet d'afficher des info-bulles (tooltip) sur tous les éléments qui en ont
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(function (el) {
+      new bootstrap.Tooltip(el);
+    });
+  </script>
+</body>
+
+</html>

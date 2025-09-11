@@ -24,8 +24,8 @@ ______________________________________________
     */
 
     /* --navbar-brand-couleur: rgb(255, 166, 0); */
-    --nav-link: white;
-    --nav-link-active: rgb(255, 209, 5);
+    --nav-link: rgb(0, 0, 0);
+    --nav-link-active: rgb(0, 123, 255);
 
 
     /* Redéfinition des couleurs de Bootstrap :*/
@@ -56,15 +56,33 @@ PROPRIETES GENERALES :
 Définition du fond :
 --------------------
 */
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 84, 99, 0.8); /* blanc translucide, ajuste la valeur si besoin */
+    z-index: -1; /* derrière tout le contenu */
+}
 body {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.95));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; /*contain*/ 
-    background-attachment: fixed;
-  }
+      background-image: url('../backgrounds/freepik.png'); /* chemin vers ton image */
+    background-repeat: no-repeat;   /* empêche l'image de se répéter */
+    background-size: cover;         /* ajuste l'image pour couvrir tout l'écran */
+    background-position: center;    /* centre l'image */
+    background-attachment: fixed;   /* l'image reste fixe quand on scrolle */
+}
 
 
+#h2{ 
+    color:black;
+
+}
+#p{
+    color: black
+}
   /*
 PROPRIETES SUR LE HEADER & NAVBAR :
 -----------------------------------
@@ -76,10 +94,11 @@ Définition du fond du header :
 */
 
 .background-header {
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.95)), url('../backgrounds/header_background.png');
+    background-image: linear-gradient(0deg, rgb(206, 206, 206), rgba(128, 128, 128)), url('../backgrounds/header_background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /*contain*/ 
+    
   }
 
 /*
@@ -104,7 +123,7 @@ Couleur des éléments de navigations :
 }
 
 .nav-link:active {
-    color: black;
+    color: rgba(214, 214, 214, 0);
 }
 
 
@@ -125,5 +144,15 @@ Couleur des éléments de navigations :
 
 
 .navbar-toggler {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.877);
+}
+
+#menu{
+    background-color: rgb(0, 123, 255) !important;
+}
+
+
+.background-header h1 {
+    color: rgb(0, 123, 255); /* Bleu vif, même style que ton logo */
+    font-weight: bold;
 }
