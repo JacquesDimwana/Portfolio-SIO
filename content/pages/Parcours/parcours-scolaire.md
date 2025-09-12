@@ -1,21 +1,61 @@
 Title: Parcours 
 
-# Présentation de mon parcours scolaire
+<title>Parcours</title>
+<style>
+    .card {
+        border: none;
+        border-radius: 0.5rem;
+    }
+    .card-header {
+        background-color: #0d6efd;
+        color: white;
+        font-weight: bold;
+    }
+    .section-title {
+        color: #0d6efd;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    hr {
+        border-top: 2px solid #0d6efd;
+    }
+    ul li {
+        margin-bottom: 0.5rem;
+    }
+</style>
 
-Bonjour je m'appel jacques Dimwana et je vais vous présenté mon parcour scolaire. j'ai effectué un bac **STMG** spécialité **SIG** (**S**ystèmes d'**I**nformations & **G**estion) par la suite j'ai voulue m'orianter dans l'informatique, j'ai donc opté pour le **BTS SIO**
-
-
-
-**1. BTS SIO** (**S**ervices **I**nformatiques aux **O**rganisations)
-    j'ai integré ce bts en **2024**, après le premier semestre, j'ai eu le choix entre deux option **slam** ou **Sisr**
-- **<u>Options :</u>** <hr>
-    - **SISR** (**S**olutions d’**I**nfrastructure
-    **S**ystèmes et **R**éseaux) → administration réseaux, cybersécurité, cloud, virtualisation. <hr>
-    - **SLAM** (**S**olutions **L**ogicielles et **A**pplications **M**étiers) → développement d’applications, web, bases de données. <hr>
-
-
-- **<u>Durée :</u>** 2 ans.
-- **<u>Débouchés :</u>** emploi direct (technicien support, admin systèmes/réseaux, développeur junior) ou poursuite d’études (Bachelor, BUT, Licence).
-
-
-- **<u>suite d'étude :</u>** à la suite de ce **BTS SIO** je shouaite continuer mes étude dans l'informatique.
+<body>
+    <main class="container my-5">
+        <!-- Présentation -->
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h2 class="section-title">Présentation de mon parcours scolaire</h2>
+                <p>
+                    Bonjour, je m'appelle <strong>Jacques Dimwana</strong> et je vais vous présenter mon parcours scolaire.
+                    J'ai effectué un <strong>Bac STMG</strong> spécialité <strong>SIG</strong>
+                    (Systèmes d’Informations & Gestion).
+                    Par la suite, j’ai voulu m’orienter dans l’informatique,
+                    j’ai donc choisi le <strong>BTS SIO</strong>.
+                </p>
+            </div>
+        </div>
+        <!-- BTS SIO -->
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h2 class="section-title">BTS SIO (Services Informatiques aux Organisations)</h2>
+                <ul>
+                    <li><strong>Année d’intégration :</strong> 2024</li>
+                    <li><strong>Durée :</strong> 2 ans</li>
+                    <li><strong>Options :</strong>
+                        <ul>
+                            <li><strong>SISR</strong> (Solutions d’Infrastructure, Systèmes et Réseaux) → administration réseaux, cybersécurité, cloud, virtualisation</li>
+                            <li><strong>SLAM</strong> (Solutions Logicielles et Applications Métiers) → développement d’applications, web, bases de données</li>
+                        </ul>
+                    </li>
+                    <li><strong>Débouchés :</strong> emploi direct (technicien support, admin systèmes/réseaux, développeur junior) ou poursuite d’études (Bachelor, BUT, Licence)</li>
+                    <li><strong>Suite d’études :</strong> poursuivre dans l’informatique après le BTS SIO</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
