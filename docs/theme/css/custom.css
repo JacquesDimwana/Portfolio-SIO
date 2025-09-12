@@ -87,7 +87,7 @@ body {
 
 }
 #p{
-    color: rgb(0, 0, 0)
+    color: rgba(255, 255, 255, 0.863)
 }
   /*
 PROPRIETES SUR LE HEADER & NAVBAR :
@@ -165,4 +165,8 @@ Couleur des éléments de navigations :
 
 
  h2 , p , li, i {color:white;
+
+}
+.card-title {
+  color: white !important;
 }

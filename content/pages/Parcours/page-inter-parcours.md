@@ -1,69 +1,103 @@
 Title: Parcours scolaire
 
 <title>Parcours</title>
-
-<body>
-    <main class="container my-5">
-        <!-- Présentation -->
-        <div class="card shadow-sm mb-4">
-            <div class="card-body">
-                <h2 class="section-title">Présentation de mon parcours scolaire</h2>
-                <p>
-                    Bonjour, je m'appelle <strong>Jacques Dimwana</strong> et je vais vous présenter mon parcours scolaire. 
-                    Mon cheminement a débuté par un <strong>Baccalauréat STMG</strong> (Sciences et Technologies du Management et de la Gestion), 
-                    avec une spécialité en <strong>SIG</strong> (Systèmes d’Informations et de Gestion). 
-                    Ce choix m’a permis de découvrir les bases de la gestion, de la comptabilité ainsi que des technologies liées aux systèmes d’information. 
-                    C’est durant ces années de lycée que j’ai développé un premier intérêt pour l’informatique et le rôle essentiel qu’elle occupe 
-                    dans le fonctionnement des entreprises modernes.
-                </p>
-                <p>
-                    Après l’obtention de mon baccalauréat, j’ai souhaité poursuivre mes études dans un domaine plus technique, 
-                    orienté vers l’informatique. C’est ainsi que je me suis tourné vers le <strong>BTS SIO</strong> 
-                    (Services Informatiques aux Organisations), une formation qui me permet de renforcer mes compétences dans 
-                    le développement, la gestion de projets et l’administration des systèmes informatiques.
-                </p>
-            </div>
-        </div>
-        <!-- BTS SIO -->
-        <div class="card shadow-sm mb-4">
-            <div class="card-body">
-                <h2 class="section-title">BTS SIO (Services Informatiques aux Organisations)</h2>
-                <ul>
-                    <li><strong>Année d’intégration :</strong> 2024. J’ai intégré ce BTS après mon bac afin de mieux m’orienter 
-                        dans le domaine de l’informatique et d’acquérir des compétences concrètes.</li>               
-                    <li><strong>Durée :</strong> 2 ans, répartis sur quatre semestres comprenant à la fois des cours théoriques 
-                        et des mises en pratique à travers des projets concrets et des stages en entreprise.</li>                    
-                    <li><strong>Options disponibles :</strong>
-                        <ul>
-                            <li><strong>SISR</strong> (Solutions d’Infrastructure, Systèmes et Réseaux) → axée sur 
-                                l’administration réseaux, la cybersécurité, le cloud et la virtualisation.</li>
-                            <li><strong>SLAM</strong> (Solutions Logicielles et Applications Métiers) → orientée vers 
-                                le développement d’applications, la programmation web, la gestion de bases de données 
-                                et la conception de solutions logicielles adaptées aux besoins des entreprises.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Débouchés :</strong> Le BTS SIO ouvre plusieurs opportunités professionnelles telles que 
-                        <em>technicien support</em>, <em>administrateur systèmes et réseaux</em> ou encore 
-                        <em>développeur junior</em>. Il est également possible de poursuivre ses études vers un 
-                        <strong>Bachelor</strong>, un <strong>BUT</strong>, une <strong>Licence</strong> ou même à terme 
-                        un <strong>Master</strong> dans le domaine de l’informatique.</li>
-                    <li><strong>Projet d’avenir :</strong> À la suite de ce BTS, mon objectif est de continuer mes études 
-                        dans le domaine de l’informatique afin de me spécialiser davantage. Je souhaite renforcer mes compétences 
-                        dans le développement d’applications et la gestion de projets numériques, afin d’évoluer vers un métier 
-                        à responsabilités dans le secteur IT.</li>
-                </ul>
-            </div>
-        </div>
-    </main>
-</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-    .card {
-    background-color: rgba(27, 33, 41, 1); /* blanc avec transparence */
-    border-radius: 0.75rem;
-    backdrop-filter: blur(5px); /* effet verre dépoli */
+/* ===== TIMELINE STYLE ===== */
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
 }
- h2 , p , li {color:white;
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #0d6efd;
+  left: 50%;
+  margin-left: -2px;
 }
-
+.timeline-item {
+  position: relative;
+  margin: 2rem 0;
+  width: 50%;
+  padding: 1rem 2rem;
+}
+.timeline-item.left { left: 0; text-align: right; }
+.timeline-item.right { left: 50%; }
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #0d6efd;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #0d6efd;
+}
+.timeline-item.left::before { right: -10px; }
+.timeline-item.right::before { left: -10px; }
+.timeline-item h3 { margin: 0; font-size: 1.25rem; font-weight: bold; }
+.timeline-item p, .timeline-item ul { margin: 0.5rem 0 0; font-size: 0.95rem; }
+.timeline-item ul { padding-left: 1.2rem; }
 </style>
+
+<body class="bg-light">
+  <main class="container my-5">
+    <h2 class="text-center mb-4">Mon Parcours Scolaire</h2>
+    <ul class="timeline">     
+      <!-- Présentation -->
+      <li class="timeline-item left">
+        <h3>Présentation</h3>
+        <p>Bonjour, je m'appelle <strong>Jacques Dimwana</strong>. Mon cheminement a débuté par un 
+        <strong>Baccalauréat STMG</strong> (Sciences et Technologies du Management et de la Gestion), 
+        spécialité <strong>SIG</strong> (Systèmes d’Informations et de Gestion).</p>
+        <p>J’y ai découvert la gestion, la comptabilité et les technologies des SI. C’est là que j’ai développé un premier intérêt pour l’informatique.</p>
+      </li>   
+      <!-- Bac STMG -->
+      <li class="timeline-item right">
+        <h3>Baccalauréat STMG (SIG)</h3>
+        <p>Formation orientée vers le management, la gestion et les systèmes d’information.</p>
+        <p>Acquisition de bases solides en économie, droit, gestion et informatique appliquée.</p>
+      </li>    
+      <!-- BTS SIO -->
+      <li class="timeline-item left">
+        <h3>BTS SIO</h3>
+        <p>Intégré en <strong>2024</strong> après mon bac, pour me spécialiser dans l’informatique.</p>
+        <ul>
+          <li><strong>Durée :</strong> 2 ans (cours + projets + stages en entreprise).</li>
+          <li><strong>Options disponibles :</strong>
+            <ul>
+              <li><strong>SISR</strong> : administration réseaux, cybersécurité, cloud, virtualisation.</li>
+              <li><strong>SLAM</strong> : développement web, bases de données, solutions logicielles.</li>
+            </ul>
+          </li>
+          <li><strong>Compétences acquises :</strong> développement, gestion de projets, administration systèmes.</li>
+        </ul>
+      </li>     
+      <!-- Débouchés -->
+      <li class="timeline-item right">
+        <h3>Débouchés</h3>
+        <p>Le BTS SIO ouvre plusieurs opportunités :</p>
+        <ul>
+          <li><em>Technicien support</em></li>
+          <li><em>Administrateur systèmes et réseaux</em></li>
+          <li><em>Développeur junior</em></li>
+        </ul>
+        <p>Possibilité de poursuite d’études : <strong>Bachelor, BUT, Licence, Master</strong>.</p>
+      </li>     
+      <!-- Projet d'avenir -->
+      <li class="timeline-item left">
+        <h3>Projet d’Avenir</h3>
+        <p>À la suite de ce BTS, je souhaite continuer mes études pour me spécialiser davantage.</p>
+        <p>Objectif : renforcer mes compétences en développement et gestion de projets numériques, 
+        et évoluer vers un métier à responsabilités dans le secteur IT.</p>
+      </li>     
+    </ul>
+  </main>
+</body>
