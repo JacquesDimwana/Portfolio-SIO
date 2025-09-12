@@ -1,27 +1,6 @@
 Title: Parcours scolaire
 
 <title>Parcours</title>
-<style>    .card {
-        border: none;
-        border-radius: 0.5rem;
-    }
-    .card-header {
-        background-color: #0d6efd;
-        color: white;
-        font-weight: bold;
-    }
-    .section-title {
-        color: #0d6efd;
-        font-weight: bold;
-        margin-bottom: 1rem;
-    }
-    hr {
-        border-top: 2px solid #0d6efd;
-    }
-    ul li {
-        margin-bottom: 0.5rem;
-    }
-</style>
 
 <body>
     <main class="container my-5">
@@ -77,3 +56,14 @@ Title: Parcours scolaire
         </div>
     </main>
 </body>
+
+<style>
+    .card {
+    background-color: rgba(27, 33, 41, 1); /* blanc avec transparence */
+    border-radius: 0.75rem;
+    backdrop-filter: blur(5px); /* effet verre dépoli */
+}
+ h2 , p , li {color:white;
+}
+
+</style>

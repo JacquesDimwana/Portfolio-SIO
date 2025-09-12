@@ -74,14 +74,20 @@ body {
     background-position: center;    /* centre l'image */
     background-attachment: fixed;   /* l'image reste fixe quand on scrolle */
 }
+.card {
+    background-color: rgb(31, 36, 43); /* blanc avec transparence */
+    border-radius: 0.75rem;
+    backdrop-filter: blur(5px); /* effet verre dépoli */
+}
+
 
 
 #h2{ 
-    color:black;
+    color:rgb(0, 123, 255);
 
 }
 #p{
-    color: black
+    color: rgb(0, 0, 0)
 }
   /*
 PROPRIETES SUR LE HEADER & NAVBAR :
@@ -155,4 +161,8 @@ Couleur des éléments de navigations :
 .background-header h1 {
     color: rgb(0, 123, 255); /* Bleu vif, même style que ton logo */
     font-weight: bold;
+}
+
+
+ h2 , p , li, i {color:white;
 }
