@@ -1,62 +1,22 @@
-
 /*
 ______________________________________________
-
-	DEFINITIONS DES CONSTANTES DE STYLES 
+    DEFINITIONS DES CONSTANTES DE STYLES
 ______________________________________________
 */
 
 :root {
-
-    /*
-    Style sur les polices :
-    -----------------------
-    */
-    /* --typo-generale: 'Fira Sans', 'Open Sans'; */
-
-    /* Polices titres & sous-titre : */
-    /* --typo-titres:  'Kanit', 'Exo 2'; */
-
-
-    /*
-    Style sur les couleurs :
-    ------------------------
-    */
-
-    /* --navbar-brand-couleur: rgb(255, 166, 0); */
+    /* Couleurs personnalisées */
     --nav-link: rgb(0, 0, 0);
     --nav-link-active: rgb(0, 123, 255);
-
-
-    /* Redéfinition des couleurs de Bootstrap :*/
-    /* --bs-warning: rgb(255, 166,  0);
-    --bs-warning-rgb: 255, 166, 0;
-
-    --bs-warning-bg-subtle: rgb(250, 240, 100);
-    --bs-warning-border-subtle: rgb(250, 240, 100); */
-
 }
 
-
-
 /*
 ________________________________________________
-
-	DEFINITION DES PROPRIETES DES CLASSES CSS
+    DEFINITION DES PROPRIETES DES CLASSES CSS
 ________________________________________________
 */
 
-/*
-----------------------
-PROPRIETES GENERALES :
-----------------------
-*/
-
-/*
-Définition du fond :
---------------------
-*/
-
+/* Fond général */
 body::before {
     content: "";
     position: fixed;
@@ -64,54 +24,50 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(58, 84, 99, 0.8); /* blanc translucide, ajuste la valeur si besoin */
+    background-color: rgba(58, 84, 99, 0.8); /* superposition translucide */
     z-index: -1; /* derrière tout le contenu */
 }
+
 body {
-      background-image: url('../backgrounds/freepik.png'); /* chemin vers ton image */
-    background-repeat: no-repeat;   /* empêche l'image de se répéter */
-    background-size: cover;         /* ajuste l'image pour couvrir tout l'écran */
-    background-position: center;    /* centre l'image */
-    background-attachment: fixed;   /* l'image reste fixe quand on scrolle */
+    background-image: url("../backgrounds/freepik.png"); /* depuis static/css/ vers static/backgrounds/ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+
+/* Style des cartes */
 .card {
-    background-color: rgb(31, 36, 43); /* blanc avec transparence */
+    background-color: rgb(31, 36, 43);
     border-radius: 0.75rem;
-    backdrop-filter: blur(5px); /* effet verre dépoli */
+    backdrop-filter: blur(5px);
 }
 
-
-
-#h2{ 
-    color:rgb(0, 123, 255);
-
+/* Titres et paragraphes */
+h2, p, li, i {
+    color: white;
 }
-#p{
-    color: rgba(255, 255, 255, 0.863)
+
+.card-title {
+    color: white !important;
 }
-  /*
-PROPRIETES SUR LE HEADER & NAVBAR :
------------------------------------
-*/
 
-/*
-Définition du fond du header :
-------------------------------
-*/
-
+/* Header avec image de fond */
 .background-header {
-    background-image: linear-gradient(0deg, rgb(206, 206, 206), rgba(128, 128, 128)), url('../backgrounds/header_background.png');
+    background-image: linear-gradient(0deg, rgb(206, 206, 206), rgba(128, 128, 128)),
+                      url('{{ SITEURL }}/theme/backgrounds/header_background.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; /*contain*/ 
-    
-  }
+    background-size: cover;
+}
 
-/*
-Couleur des éléments de navigations :
--------------------------------------
-*/
+.background-header h1 {
+    color: rgb(0, 123, 255);
+    font-weight: bold;
+}
 
+/* Navbar */
 .navbar {
     font-size: 0.8em;
 }
@@ -125,18 +81,16 @@ Couleur des éléments de navigations :
 }
 
 .nav-link:hover, .dropdown-item:hover {
-    color: var(--bs-warning);
+    color: var(--nav-link-active);
 }
 
 .nav-link:active {
     color: rgba(214, 214, 214, 0);
 }
 
-
 .navbar-nav .nav-item .active {
     color: var(--nav-link-active);
-  }
-
+}
 
 .dropdown-item {
     font-weight: bold;
@@ -144,29 +98,14 @@ Couleur des éléments de navigations :
 }
 
 .dropdown-item:active {
-    background-color: var(--navbar-brand-couleur);
+    background-color: var(--nav-link-active);
     color: white;
 }
-
 
 .navbar-toggler {
     background-color: rgba(255, 255, 255, 0.877);
 }
 
-#menu{
+#menu {
     background-color: rgb(0, 123, 255) !important;
-}
-
-
-.background-header h1 {
-    color: rgb(0, 123, 255); /* Bleu vif, même style que ton logo */
-    font-weight: bold;
-}
-
-
- h2 , p , li, i {color:white;
-
-}
-.card-title {
-  color: white !important;
 }
