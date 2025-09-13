@@ -68,11 +68,11 @@ body::before {
     z-index: -1; /* derrière tout le contenu */
 }
 body {
-      background-image: url('../backgrounds/freepik.png'); /* chemin vers ton image */
-    background-repeat: no-repeat;   /* empêche l'image de se répéter */
-    background-size: cover;         /* ajuste l'image pour couvrir tout l'écran */
-    background-position: center;    /* centre l'image */
-    background-attachment: fixed;   /* l'image reste fixe quand on scrolle */
+    background-image: url("{{ SITEURL }}/theme/backgrounds/freepik.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 .card {
     background-color: rgb(31, 36, 43); /* blanc avec transparence */
