@@ -68,12 +68,13 @@ body::before {
     z-index: -1; /* derrière tout le contenu */
 }
 body {
-    background-image: url("{{ SITEURL }}/theme/backgrounds/freepik.png");
+    background-image: url("../backgrounds/freepik.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
 .card {
     background-color: rgb(31, 36, 43); /* blanc avec transparence */
     border-radius: 0.75rem;
